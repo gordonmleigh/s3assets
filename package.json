@@ -1,0 +1,44 @@
+{
+  "name": "s3assets",
+  "version": "0.1.0",
+  "author": {
+    "email": "gordonmleigh@gmail.com",
+    "name": "Gordon Leigh"
+  },
+  "description": "manage assets in S3",
+  "license": "MIT",
+  "bin": {
+    "s3assets": "run.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "prepare": "npm run compile",
+    "watch:compile": "tsc --watch --incremental"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.35.0",
+    "@aws-sdk/lib-storage": "^3.35.0",
+    "@fmtk/async-main": "^0.1.1",
+    "@supercharge/promise-pool": "^1.8.0",
+    "fast-glob": "^3.2.7",
+    "lodash.throttle": "^4.1.1",
+    "mime-types": "^2.1.33",
+    "pretty-bytes": "^5.6.0"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "devDependencies": {
+    "@types/lodash.throttle": "^4.1.6",
+    "@types/mime-types": "^2.1.1",
+    "@types/node": "^16.10.3",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  }
+}
